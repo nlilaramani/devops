@@ -1,0 +1,43 @@
+TLD
+Alias Record - A Record
+*.com - IP Address [10.3.121.22]
+
+SLD - 10.3.121.22
+*.amazon.com - IP Address [20.1.2.33   Route 53 - Name server]
+
+Alias Record - A Record[Route 53]
+domain name - IP Address
+s3.region.aws.com - 2.123.11.22
+========================================
+
+AWS - Namespaces are confined to Hosted Zones
+Zone - 10,000 names
+A Hosted Zone 
+Name Servers - ns1.aws.com, ns2.aws.com.....
+
+Register domain
+ns1.aws.com
+A record entries for your domain
+ns2.aws.com
+======================================
+EC2 machine - ec2.r1.aws.com
+
+Web server ec2.r1.aws.com
+
+4 - A records for same fqdn
+ec2.r1.aws.com 10.123.45.123 20
+ec2.r1.aws.com 10.123.45.124 30
+ec2.r1.aws.com 10.123.45.125 40
+ec2.r1.aws.com 10.123.45.126 10
+
+=============================================
+LoadBalancer - LB1 - I1, I2, I3, I4
+I1 -> t2.xlarge
+I2 -> t3.xlarge
+
+AutoSclaing Group
+t2.micro
+Amazon Linux
+Desired capacity of - 2 [Simple]
+LB1
+I3, I4
